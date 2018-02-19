@@ -5,15 +5,20 @@
     <title>Kyle's PokeDex</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
+    <nav>
+      <div class="nav-wrapper indigo darken-2">
+        <a href="/" class="brand-logo center"><img src="/img/pokedexLogo.png"></a>
+        <ul id="nav-mobile" class="left">
+          <li><a href="/">&nbsp Home</a></li>
+        </ul>
+        <% if(user){ %>
+          <a class="right" href="/profile"><%= user.userName %> &nbsp</a>
+        <% }else{ %>
+          <a class="right pulse" href="/login">Login &nbsp</a>
+        <% } %>
+      </div>
+    </nav>
     <div class="container">
-      <nav>
-        <div class="nav-wrapper indigo darken-2">
-          <a href="/" class="brand-logo center"><img src="/img/pokedexLogo.png"></a>
-          <ul id="nav-mobile" class="hide-on-med-and-down left">
-            <li><a href="/">Home</a></li>
-            <li><a href="/login">Login</a></li>
-          </ul>
-        </div>
-      </nav>
