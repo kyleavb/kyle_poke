@@ -1,7 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var pokemon = sequelize.define('pokemon', {
-    id: DataTypes.INTEGER,
     name: DataTypes.STRING,
     picture_url: DataTypes.STRING,
     api_string: DataTypes.STRING

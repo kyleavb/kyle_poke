@@ -20,7 +20,6 @@ app.get("/profile", function(req, res){
   res.render("profile", {user: user});
 });
 
-
 app.get("/login", function(req, res){
   res.render("login", {user, user});
 });
